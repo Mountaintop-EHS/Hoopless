@@ -12,10 +12,10 @@
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12 text-left text-light">
-                <h1 class="font-weight-light">
-                    We make software for tomorrow by breaking the assumptions of today.
+                <h1 class="font-weight-light" style=" text-shadow: 2px 2px #000;">
+                    Climb to the Mountaintop of EHS
                 </h1>
-                <p class="lead"><i class="fas fa-code fa-1x"></i> Empowering collaborators through software engineering.</p>
+                <p class="lead">Regulator compliance assistance at it's best.</p>
             </div>
         </div>
     </div>
@@ -37,43 +37,28 @@
 
 <div class="container">
 
-    <h2>Latest <abbr title="Open-Source Software">OSS</abbr> Projects:</h2>
+    <h2>Latest News:</h2>
     <div class="card mb-3">
-        <div class="row no-gutters">
-            <div class="col-12 col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">A CMS Built For the Team</h5>
-                    <p class="card-text">
-                        We wanted to make a content management system built around using a more expressive collaboration
-                        language to empower web teams and communicate design.
-                    </p>
-                    <a href="/help/phpmarkup" class="btn btn-primary mb-4">
-                        Learn More <span class="arrow-cta__icon" aria-hidden="true"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 d-none d-lg-inline-block">
-                <img src="/assets/images/hoopless/logo.png" alt="PHPMarkup" class="m-2"/>
-            </div>
+        <div class="card-body">
+            <h5 class="card-title">Phasellus pretium ligula </h5>
+            <p class="card-text">
+                Duis id dui ipsum. Phasellus pretium ligula ac sodales luctus. In nec diam scelerisque, efficitur sem vel, aliquet diam. Nam ac ipsum et odio varius molestie a sit amet diam. Mauris vestibulum rhoncus ante, ac accumsan quam suscipit eu. Cras accumsan est vitae turpis bibendum, non rhoncus metus posuere. Integer in pellentesque nibh. In dapibus lacus nec tortor pulvinar, in placerat turpis scelerisque. Fusce vitae lobortis mi. Nunc lobortis in felis nec pharetra. Sed ligula velit, malesuada sed varius in, malesuada ut nisi. In accumsan felis orci, sit amet laoreet sem dignissim et. Proin vel turpis iaculis, ultricies magna at, tempor risus. Mauris risus metus, fringilla eget tempus vel, ultrices ut lectus. Duis arcu ante, laoreet vitae hendrerit non, ornare sit amet sem. Suspendisse nec hendrerit enim.
+            </p>
+            <a href="/help/phpmarkup" class="btn btn-primary mb-4">
+                Learn More <span class="arrow-cta__icon" aria-hidden="true"></span>
+            </a>
         </div>
     </div>
 
     <div class="card mb-3">
-        <div class="row no-gutters">
-            <div class="col-12 col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Feeling Lucky?</h5>
-                    <p class="card-text">
-                        Check out our library for simulating luck based dice rolls from dice notations written in PHP.
-                    </p>
-                    <a href="https://github.com/Ouxsoft/LuckByDice" class="btn btn-primary">
-                        Learn More <span class="arrow-cta__icon" aria-hidden="true"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 d-none d-lg-inline-block">
-                <img src="/assets/images/luckbydice/logo.png" alt="LuckByDice" class="m-3"/>
-            </div>
+        <div class="card-body">
+            <h5 class="card-title"> Vestibulum lectus turpis</h5>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lectus turpis, dapibus quis lorem vel, ullamcorper ultricies augue. Morbi sit amet hendrerit turpis. Donec facilisis velit eget imperdiet efficitur. Vestibulum volutpat interdum lectus venenatis suscipit. Donec risus felis, euismod non massa in, mollis scelerisque sem. Vestibulum sit amet velit vel urna consequat egestas quis at odio. Mauris ut neque a lectus sagittis ultricies. Proin eleifend, urna at vehicula vehicula, turpis diam rhoncus nisi, a tempus libero quam eget metus.
+            </p>
+            <a href="https://github.com/Ouxsoft/LuckByDice" class="btn btn-primary">
+                Learn More <span class="arrow-cta__icon" aria-hidden="true"></span>
+            </a>
         </div>
     </div>
 </div>
