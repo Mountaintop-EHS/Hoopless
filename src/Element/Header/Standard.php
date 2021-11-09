@@ -42,7 +42,7 @@ class Standard extends AbstractElement
         }
 
         // TODO improve by passing router
-        $this->pages = $this->em->getConnection()->fetchAllNumeric('
+        $this->pages = $this->em->getConnection()->fetchAllAssociative('
             SELECT `title`, `url`, IF(`url`=?, 1, 0) AS `active` 
            FROM ( 
            SELECT @r AS _id,
