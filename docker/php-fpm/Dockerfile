@@ -4,7 +4,6 @@
 #######################################
 FROM php:7.4-fpm-buster AS build
 
-ARG ENV=DEV
 ARG user=root
 ARG group=root
 
@@ -69,13 +68,13 @@ FROM build AS test
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 ENV PATH="~/.composer/vendor/bin:./vendor/bin:${PATH}"
 
-# Testing uses bind volume mount
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini" \
  && pecl install xdebug \
  && echo "xdebug.mode=coverage\n" >> "$PHP_INI_DIR/conf.d/docker-php-ext-xdebug.ini" \
  && docker-php-ext-enable xdebug \
  && rm -rf /tmp/*
 
+# Testing uses bind volume mount
 COPY composer.json /application
 COPY composer.lock /application
 

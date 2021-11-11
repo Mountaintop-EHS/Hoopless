@@ -33,6 +33,7 @@ services:
     environment:
       - VIRTUAL_HOST=ouxsoft.com
       - LETSENCRYPT_HOST=ouxsoft.com
+      - ENVIRONMENT=prod
     expose:
       - 80
     restart: unless-stopped

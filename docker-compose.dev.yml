@@ -16,6 +16,7 @@ services:
     environment:
       - VIRTUAL_HOST=localhost
       - CERT_NAME=localhost
+      - ENVIRONMENT=dev
     networks:
       - proxynet
     restart: unless-stopped
@@ -83,7 +84,6 @@ services:
 #      - proxynet
 #    depends_on:
 #      - proxy
-
 
 networks:
   proxynet:
