@@ -16,7 +16,7 @@
 
             <h2>Why MountaintopEHS?</h2>
             <p>
-                MountaintopEHS - Fill stuff in here.
+                MountaintopEHS - Placeholder.
             </p>
 
             <h2>Logo Meaning</h2>
