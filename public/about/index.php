@@ -14,15 +14,13 @@
                 We make software for tomorrow by breaking the assumptions of today.
             </p>
 
-            <h2>Why Ouxsoft?</h2>
+            <h2>Why MountaintopEHS?</h2>
             <p>
-                Ouxsoft stems from the words “oux” and “soft.” “Oux” is short for Ourococcus, which is a green genus of
-                algae. Why algae? Because small things coalescing over time have a big impact. “Soft” is short for
-                "software” as that is what we make.
+                MountaintopEHS - Fill stuff in here.
             </p>
 
             <h2>Logo Meaning</h2>
-            <img src="/assets/images/ouxsoft/logo/color-black-bg.png" class="rounded float-right ml-5" width="120" alt="Ouxsoft"/>
+            <img src="/assets/images/mountaintop-ehs/logo/white-transparent-bg.png" class="rounded float-right ml-5" width="120" alt="MountaintopEHS"/>
             <p>
                 Each of the larger ellipses that form a circle in the logo are designed after ourococcus. The eye-like
                 structure is dual purpose, it is both the ourococcus nucleus and shaped like an eye to represent an eye
