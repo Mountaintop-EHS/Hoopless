@@ -13,7 +13,7 @@
         <div class="row h-100 align-items-center">
             <div class="col-12 text-left text-light">
                 <h1 class="font-weight-light" style=" text-shadow: 2px 2px #000;">
-                    Climb to the Mountaintop of EHS
+                    Mountaintop EHS, where we bring strcture to the natural world.
                 </h1>
                 <p class="lead">Regulator compliance assistance at it's best.</p>
             </div>
