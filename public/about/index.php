@@ -11,21 +11,22 @@
         <main name="Standard" class="editable">
             <h1>About</h1>
             <p class="lead">
-                We make software for tomorrow by breaking the assumptions of today.
+                We create structure for safety within companies and mold it into proccesses for all levels within an organization.
             </p>
 
             <h2>Why MountaintopEHS?</h2>
             <p>
-                MountaintopEHS - Placeholder.
+                Our expertise and skills combined with our passion for improvement creates better opportunities to help our clients lead 
+                an impact that will have lasting value.
             </p>
 
-            <h2>Logo Meaning</h2>
+            <h2>What is MountaintopEHS philosophy?</h2>
             <img src="/assets/images/mountaintop-ehs/logo/white-transparent-bg.png" class="rounded float-right ml-5" width="120" alt="MountaintopEHS"/>
             <p>
-                Each of the larger ellipses that form a circle in the logo are designed after ourococcus. The eye-like
-                structure is dual purpose, it is both the ourococcus nucleus and shaped like an eye to represent an eye
-                of course, and the evolution of perception. The eight ellipses are coalescing to form multicellular life.
-                The number eight symbolizes balance, luck, and the ultimate form of achievement.
+                With each success there are countless failures. We build upon those experiences from ourselves and others to create a basic 
+                understanding of how the world works. As we continue to trek onto bigger challenges we use these new understandings
+                to make our actions more meaningful allowing us to lead our clients to a better tomorrow.
+                
             </p>
         </main>
 
