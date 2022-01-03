@@ -17,7 +17,7 @@ return [
     [
         "name" => "Code",
         "xpath" => "//code[not(ancestor::*[@process='false'])]",
-        "class_name" => App\Element\Code::class
+        "class_name" => App\Element\Widget\Code::class
     ],
 
     /**
@@ -111,19 +111,6 @@ return [
         "class_name" => "App\Element\Widget\{name}",
         "cache_duration" => "1 hour",
         "search_index" => false
-    ],
-
-    /**
-     * Navigation
-     *
-     * skip elements with ancestors with the attribute process="false"
-     * e.g.
-     *  skip: <html process="false><nav></nav></html>
-     */
-    [
-        "name" => "Nav",
-        "xpath" => "//nav[not(ancestor::*[@process='false']|ancestor::main)]",
-        "class_name" => "App\Element\Nav\{name}"
     ],
 
     /**

@@ -1,14 +1,9 @@
-<html lang="en">
-<head name="Standard">
-    <title>PHPMarkup</title>
-</head>
-<body>
+<partial name="Page">
 
-<header name="Standard"/>
+    <partial name="PageHeader"/>
 
-<div class="container">
-    <div class="row">
-        <main name="Standard" class="editable">
+    <partial name="PageContent">
+        <partial name="PageMainContent" class="editable">
             <h1>PHPMarkup</h1>
 
             <p>Editors can use dynamic markup in maintaining pages. This is due to pages being written in an HTML templating engine language called <a href="https://github.com/Ouxsoft/LHTML">LHTML</a>, which is processed via the <a href="https://github.com/Ouxsoft/PHPMarkup">PHPMarkup</a> engine.</p>
@@ -25,36 +20,12 @@
                     <td>&lt;code&gt;</td>
                 </tr>
                 <tr>
-                    <td><a href="/help/phpmarkup/elements/examples">Examples</a></td>
-                    <td>&lt;example&gt;</td>
-                </tr>
-                <tr>
-                    <td><a href="/help/phpmarkup/elements/footer">Footer</a></td>
-                    <td>&lt;footer&gt;</td>
-                </tr>
-                <tr>
-                    <td><a href="/help/phpmarkup/elements/head">Head</a></td>
-                    <td>&lt;head&gt;</td>
-                </tr>
-                <tr>
-                    <td><a href="/help/phpmarkup/elements/header">Header</a></td>
-                    <td>&lt;header&gt;</td>
-                </tr>
-                <tr>
                     <td><a href="/help/phpmarkup/elements/if-statement">If Statement</a></td>
                     <td>&lt;if&gt;</td>
                 </tr>
                 <tr>
                     <td><a href="/help/phpmarkup/elements/images">Images</a></td>
                     <td>&lt;img&gt;</td>
-                </tr>
-                <tr>
-                    <td><a href="/help/phpmarkup/elements/main">Main</a></td>
-                    <td>&lt;main&gt;</td>
-                </tr>
-                <tr>
-                    <td><a href="/help/phpmarkup/elements/nav">Navigation</a></td>
-                    <td>&lt;nav&gt;</td>
                 </tr>
                 <tr>
                     <td><a href="/help/phpmarkup/elements/partial">Partial</a></td>
@@ -81,16 +52,26 @@
             <h2>Turn off</h2>
             <p>LHTML is not processed when an ancestor features an attribute process="false".</p>
 
-        </main>
+        </partial>
 
-        <nav name="SideMenu">
-            <arg name="menu" type="string">help</arg>
-            <nav name="QuickLinks" class="editable">
-            </nav>
-        </nav>
-    </div>
-</div>
+        <partial name="PageSideBar">
+            <partial name="QuickLinks" class="editable">
+                <arg name="menu" type="string">help</arg>
+                <a href="https://github.com/Ouxsoft/hoopless">
+                    Hoopless
+                </a>
+                <a href="https://github.com/Ouxsoft/PHPMarkup">
+                    PHPMarkup
+                </a>
+                <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction">
+                    Bootstrap CSS
+                </a>
+                <a href="https://github.com/Ouxsoft/LHTML">
+                    LHTML Standard
+                </a>
+            </partial>
+        </partial>
+    </partial>
 
-<footer name="Standard"/>
-</body>
-</html>
+    <partial name="PageFooter" />
+</partial>

@@ -5,7 +5,7 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * ContentTypeGroupAccess
+ * ContentTypeGroupAccess.
  *
  * @ORM\Table(name="content_type_group_access")
  * @ORM\Entity
@@ -41,8 +41,6 @@ class CustomPermission
      * @ORM\Column(name="timestamp", type="datetime", nullable=false, options={"default"="CURRENT_TIMESTAMP"})
      */
     private $timestamp = 'CURRENT_TIMESTAMP';
-
-
 }
 
 /*

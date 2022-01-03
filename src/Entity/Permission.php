@@ -5,7 +5,7 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * User
+ * User.
  *
  * @ORM\Table(name="permission")
  * @ORM\Entity
@@ -34,5 +34,4 @@ class Permission
      * @ORM\Column(name="description", type="string", length=255, nullable=true)
      */
     private $description;
-
 }

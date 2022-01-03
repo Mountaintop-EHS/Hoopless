@@ -19,31 +19,35 @@ class News extends AbstractElement
 
     public function onLoad()
     {
-       $limit = is_int($this->getArgByName('limit')) ? $this->getArgByName('limit') : self::$limit;
+        $limit = is_int($this->getArgByName('limit')) ? $this->getArgByName('limit') : self::$limit;
 
-       if(isset($this->newsId)){
-           $this->news[] = $this->em->getRepository(\App\Entity\News::class)->find($this->newsId);
-       } else {
-           $this->news = $this->em->getRepository(\App\Entity\News::class)->findBy(
-               [],null, $limit, null
-           );
-       }
+        if (isset($this->newsId)) {
+            $this->news[] = $this->em->getRepository(\App\Entity\News::class)->find($this->newsId);
+        } else {
+            $this->news = $this->em->getRepository(\App\Entity\News::class)->findBy(
+                [],
+                null,
+                $limit,
+                null
+            );
+        }
     }
 
     public function onRender()
     {
-        $out = '<!-- News -->';
+        $stories = [];
         foreach ($this->news as $news) {
-            $out .= $this->view->render(
-                $this->getArgByName('format'),
-                [
-                    'news_id' => $news->getNewsId(),
-                    'title' => $news->getTitle(),
-                    'body' => $news->getBody(),
-                    'publish_date' => $news->getPublishDate()->format('F d, Y')
-                ]
-            );
+            $stories[] = [
+                'format' => $this->getArgByName('format'),
+                'news_id' => $news->getNewsId(),
+                'title' => $news->getTitle(),
+                'body' => $news->getBody(),
+                'publish_date' => $news->getPublishDate()->format('F d, Y'),
+            ];
         }
-        return $out;
+
+        return $this->view->render('news.html.twig', [
+            'stories' => $stories,
+        ]);
     }
 }

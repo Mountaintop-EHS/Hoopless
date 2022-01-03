@@ -6,15 +6,20 @@ use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * PageRevision
+ * PageRevision.
  *
  * @ORM\Table(name="page_revision")
  * @ORM\Entity
  */
 class PageRevision
 {
-    const HIDDEN_STATUS = 0;
-    const ACTIVE_STATUS = 1;
+    public const HIDDEN_STATUS = 0;
+    public const ACTIVE_STATUS = 1;
+
+    public const STATUSES = [
+        self::HIDDEN_STATUS,
+        self::ACTIVE_STATUS,
+    ];
 
     /**
      * @var int
@@ -47,7 +52,7 @@ class PageRevision
     private $status;
 
     /**
-     * @var string
+     * @var string used to generate meta authors
      *
      * @ORM\Column(name="user_id", type="integer", length=11, nullable=false)
      */
@@ -67,128 +72,83 @@ class PageRevision
      */
     private $updated;
 
-
-    public function setActive() : void
+    public function setActive(): void
     {
         $this->status = self::ACTIVE_STATUS;
     }
 
-    public function setHidden() : void
+    public function setHidden(): void
     {
         $this->status = self::HIDDEN_STATUS;
     }
 
-    /**
-     * @return int
-     */
     public function getPageRevisionId(): int
     {
         return $this->pageRevisionId;
     }
 
-    /**
-     * @param int $pageRevisionId
-     */
     public function setPageRevisionId(int $pageRevisionId): void
     {
         $this->pageRevisionId = $pageRevisionId;
     }
 
-    /**
-     * @return int
-     */
     public function getPageId(): int
     {
         return $this->pageId;
     }
 
-    /**
-     * @param int $pageId
-     */
     public function setPageId(int $pageId): void
     {
         $this->pageId = $pageId;
     }
 
-    /**
-     * @return string
-     */
     public function getBody(): string
     {
         return $this->body;
     }
 
-    /**
-     * @param string $body
-     */
     public function setBody(string $body): void
     {
         $this->body = $body;
     }
 
-    /**
-     * @return int
-     */
     public function getStatus(): int
     {
         return $this->status;
     }
 
-    /**
-     * @param int $status
-     */
     public function setStatus(int $status): void
     {
         $this->status = $status;
     }
 
-    /**
-     * @return string
-     */
     public function getUserId(): string
     {
         return $this->userId;
     }
 
-    /**
-     * @param string $userId
-     */
     public function setUserId(string $userId): void
     {
         $this->userId = $userId;
     }
 
-    /**
-     * @return DateTime
-     */
     public function getCreated(): DateTime
     {
         return $this->created;
     }
 
-    /**
-     * @param DateTime $created
-     */
     public function setCreated(DateTime $created): void
     {
         $this->created = $created;
     }
 
-    /**
-     * @return DateTime
-     */
     public function getUpdated(): DateTime
     {
         return $this->updated;
     }
 
-    /**
-     * @param DateTime $updated
-     */
     public function setUpdated(DateTime $updated): void
     {
         $this->updated = $updated;
     }
-
-
 }

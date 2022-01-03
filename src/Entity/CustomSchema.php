@@ -6,7 +6,7 @@ use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * ContentTypeSchema
+ * ContentTypeSchema.
  *
  * @ORM\Table(name="content_type_schema")
  * @ORM\Entity
@@ -63,6 +63,4 @@ class CustomSchema
      * @ORM\Column(name="timestamp", type="datetime", nullable=false, options={"default"="CURRENT_TIMESTAMP"})
      */
     private $timestamp = 'CURRENT_TIMESTAMP';
-
-
 }

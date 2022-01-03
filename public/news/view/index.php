@@ -1,33 +1,30 @@
-<html lang="en">
-<head name="Standard">
-    <title>News</title>
-</head>
-<body>
+<partial name="Page">
 
-<header name="Standard"/>
+    <partial name="PageHeader" />
 
-<div class="container">
-    <div class="row">
-        <main name="Standard" class="editable">
-
+    <partial name="PageContent">
+        <partial name="PageMainContent" class="editable">
             <partial name="News">
-                <arg name="id" type="int"><var name="id" source="get"/></arg>
+                <arg name="id" type="int"><var name="id" source="get" /></arg>
                 <arg name="limit" type="int">1</arg>
                 <arg name="format">
                     <article class="mb-5">
-                        <h1>{{title}}</h1>
+                        <h1>{{story.title}}</h1>
                         <p class="text-muted">
-                            <date>{{publish_date}}</date>
+                            <date>{{story.publish_date}}</date>
                         </p>
-                        {{body}}
+                        {{story.body|raw}}
                     </article>
                 </arg>
             </partial>
 
-        </main>
-    </div>
-</div>
+        </partial>
 
-<footer name="Standard"/>
-</body>
-</html>
+        <partial name="PageSideBar">
+            <partial name="QuickLinks" class="editable">
+            </partial>
+        </partial>
+    </partial>
+
+    <partial name="PageFooter" />
+</partial>

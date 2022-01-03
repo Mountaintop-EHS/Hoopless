@@ -5,7 +5,7 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * ContentTypeEntity
+ * ContentTypeEntity.
  *
  * @ORM\Table(name="group")
  * @ORM\Entity
@@ -28,29 +28,18 @@ class Group
      */
     private $name;
 
-
-    /**
-     * @return int
-     */
-    public function getGroupId() : int
+    public function getGroupId(): int
     {
         return $this->groupId;
     }
 
-    /**
-     * @return string
-     */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @param string $name
-     */
     public function setName(string $name)
     {
         $this->name = $name;
     }
-
 }

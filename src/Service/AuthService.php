@@ -3,24 +3,20 @@
 namespace App\Service;
 
 /**
- * Class AuthService
- * @package App\Service
+ * Class AuthService.
  */
 class AuthService
 {
-    /**
-     * @param string $username
-     * @param string $password
-     * @return bool
-     */
-    public function authenticate(string $username, string $password) : bool
+    public function authenticate(string $username, string $password): bool
     {
         // check for admin credentials
-        if(
+        if (
             ($username == $_ENV['ADMIN_USERNAME'])
             && ($password == $_ENV['ADMIN_PASSWORD'])
         ) {
+            session_start();
             $_SESSION['username'] = $_ENV['ADMIN_USERNAME'];
+
             return true;
         }
 

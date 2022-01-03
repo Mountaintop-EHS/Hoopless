@@ -2,11 +2,12 @@
 
 namespace App\Entity;
 
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Page
- * Static content that is timeless
+ * Static content that is timeless.
  *
  * @ORM\Table(name="page")
  * @ORM\Entity
@@ -44,6 +45,20 @@ class Page
     private $url;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="keywords", type="string", length=255, nullable=true)
+     */
+    private $keywords;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="template", type="string", length=255, nullable=true)
+     */
+    private $template;
+
+    /**
      * @var DateTime
      *
      * @ORM\Column(name="created", type="datetime", nullable=false, options={"default"="CURRENT_TIMESTAMP"})
@@ -57,33 +72,76 @@ class Page
      */
     private $updated;
 
-    /**
-     * @return DateTime
-     */
+    public function getPageId(): int
+    {
+        return $this->pageId;
+    }
+
+    public function getPageParentId(): int
+    {
+        return $this->pageParentId;
+    }
+
+    public function setPageParentId(int $pageParentId): void
+    {
+        $this->pageParentId = $pageParentId;
+    }
+
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    public function setTitle(string $title): void
+    {
+        $this->title = $title;
+    }
+
+    public function getUrl(): string
+    {
+        return $this->url;
+    }
+
+    public function setUrl(string $url): void
+    {
+        $this->url = $url;
+    }
+
+    public function getKeywords(): string
+    {
+        return $this->keywords;
+    }
+
+    public function setKeywords(string $keywords): void
+    {
+        $this->keywords = $keywords;
+    }
+
+    public function getTemplate(): string
+    {
+        return $this->template;
+    }
+
+    public function setTemplate(string $template): void
+    {
+        $this->template = $template;
+    }
+
     public function getCreated(): DateTime
     {
         return $this->created;
     }
 
-    /**
-     * @param DateTime $created
-     */
     public function setCreated(DateTime $created): void
     {
         $this->created = $created;
     }
 
-    /**
-     * @return DateTime
-     */
     public function getUpdated(): DateTime
     {
         return $this->updated;
     }
 
-    /**
-     * @param DateTime $updated
-     */
     public function setUpdated(DateTime $updated): void
     {
         $this->updated = $updated;

@@ -1,74 +1,27 @@
-<html lang="en">
-<head name="Standard">
-    <title>Bitwise</title>
+<partial name="Page">
 
-    <script src="/assets/js/codemirror/codemirror.js"/>
-    <script src="/assets/js/codemirror/xml.js"/>
-    <link href="/assets/css/codemirror/codemirror.css" rel="stylesheet"/>
-    <link href="/assets/css/codemirror/dracula.css" rel="stylesheet"/>
+    <partial name="PageHeader"/>
 
-</head>
-<body>
-
-<header name="Standard"/>
-
-<div class="container">
-    <div class="row">
-        <main name="Standard" class="editable">
+    <partial name="PageContent">
+        <partial name="PageMainContent" class="editable">
 
             <h1>Code Element</h1>
             <p>
                 Code is a element used for displaying blocks of code in a stylized manner.
+                Using the "&lt;code/&gt;" tag when editing this site will cause the creation of a code block.
             </p>
 
-            <nav class="nav nav-tabs">
-                <a class="nav-item nav-link active" data-toggle="tab" href="#code-2">Code</a>
-                <a class="nav-item nav-link" data-toggle="tab" href="#result-2">Results</a>
-            </nav>
-            <div class="tab-content border border-top-0 p-3 mb-3">
-                <div id="code-2" class="tab-pane fade show active">
-                    <code process="false">
-                        <code>
-                            $var = 1;
-                        </code>
-                    </code>
-                </div>
-                <div id="result-2" class="tab-pane fade">
-                    <code>
-                        $var = 1;
-                    </code>
-                </div>
-            </div>
+            <code demo="true" process="false">
+                <code>
+                    $var = 1;
+                </code>
+            </code>
 
-        </main>
+        </partial>
 
-        <nav name="SideMenu">
-            <arg name="menu" type="string">help</arg>
-            <nav name="QuickLinks" class="editable">
+        <partial name="PageSideBar">
+        </partial>
+    </partial>
 
-            </nav>
-        </nav>
-    </div>
-</div>
-
-<footer name="Standard"/>
-
-<script>
-    function qsa(sel) {
-        return Array.apply(null, document.querySelectorAll(sel));
-    }
-    qsa(".codemirror-textarea").forEach(function (editorEl) {
-        CodeMirror.fromTextArea(editorEl, {
-            lineNumbers: true,
-            styleActiveLine: true,
-            matchBrackets: true,
-            mode : "xml",
-            htmlMode: true,
-            theme: "dracula"
-        });
-    });
-</script>
-
-
-</body>
-</html>
+    <partial name="PageFooter" />
+</partial>
