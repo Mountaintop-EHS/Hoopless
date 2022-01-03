@@ -8,7 +8,7 @@
             <div class="hero-feature-outline">
                 <div class="hero-feature-outline-left">
                     <h1 class="hero-feature-title display-5 fw-bold text-white">
-                        Regulator Compliance
+                        Regulatory Compliance
                     </h1>
 
                     <p class="lead text-white fw-bold ">
