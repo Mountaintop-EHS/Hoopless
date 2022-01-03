@@ -43,7 +43,7 @@
             <h5 class="card-title">Safety Program Development</h5>
             <p class="card-text">
                 We offer a wide range of safety programs that are unique to your facility and procceses taking complex
-                regulatory actions into easy steps that have meaningful impact. We will work with you to ensure that the safety program 
+                regulatory actions into easy steps outlined for managers and employees. We will work with you to ensure that the safety program
                 fits your needs and meets all requirements from federal, state, local, or tribal.
             </p>
             <a href="/help/phpmarkup" class="btn btn-primary mb-4">
@@ -66,7 +66,19 @@
         </div>
     </div>
 </div>
-
+<div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">Training Content</h5>
+            <p class="card-text">
+                Need help updating or making training slides? Look no further, we offer training presentations that are written to match all regulatory requirements
+                with notes for the presenter and a demonstration video to help your confidence in hosting training onsite.
+            </p>
+            <a href="https://github.com/Ouxsoft/LuckByDice" class="btn btn-primary">
+                Learn More <span class="arrow-cta__icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+</div>
 
 <footer name="Standard"/>
 </body>
