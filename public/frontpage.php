@@ -100,7 +100,7 @@
     </partial>
 
 
-    <div class="jumbotron p-5 bg-dark rounded-3"  style="background-image:url('/assets/images/dimension/1260x630/offset/0,-20/jumbo/green-mountains.jpg');">
+    <div class="jumbotron p-5 bg-dark rounded-3"  style="background-image:url('/assets/images/dimension/2000x630/offset/0,-20/jumbo/green-mountains.jpg');">
         <div class="container py-5 text-white">
             <h1 class="display-5 fw-bold">Don't go it alone.</h1>
             <p class="col-md-8 fs-4">
