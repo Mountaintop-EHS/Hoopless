@@ -107,7 +107,7 @@
                 Climb above the mountain of regulatory requirements.
             </p>
             <a class="btn btn-warning text-uppercase btn-lg" href="https://github.com/Ouxsoft" role="button">
-                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <i class="fa fa-calendar" aria-hidden="true"></i>
                 Schedule a Consultation
             </a>
         </div>
